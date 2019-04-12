@@ -1,5 +1,5 @@
-#include "net-snmp-config.h"
-#include "net-snmp-includes.h"
+#include "net-snmp/net-snmp-config.h"
+#include "net-snmp/net-snmp-includes.h"
 #include <string.h>
 
 /* change the word "define" to "undef" to try the (insecure) SNMPv1 version */
@@ -70,7 +70,7 @@ int main(int argc, char ** argv)
 
 #else /* we'll use the insecure (but simplier) SNMPv1 */
 
-    /* set the SNMP version number */
+        /* set the SNMP version number */
     session.version = SNMP_VERSION_1;
 
     /* set the SNMPv1 community name used for authentication */

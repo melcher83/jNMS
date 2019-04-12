@@ -3,8 +3,11 @@ project(jNMS)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(jNMS main.cpp)
+add_executable(jNMS main.cpp )
 
-include_directories(${CMAKE_SOURCE_DIR}/net-snmp)
+include_directories(${CMAKE_SOURCE_DIR})
+
+
+
 
 
